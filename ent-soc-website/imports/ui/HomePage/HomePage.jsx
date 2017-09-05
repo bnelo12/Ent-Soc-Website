@@ -4,9 +4,10 @@ import ScrollButton from './ScrollButton';
 
 var parallaxScrollStyle = {
   height: "100%",
-  position: "fixed",
+  position: "absolute",
+  backgroundAttachment: "fixed",
   width: "100%",
-  backgroundColor: "azure"
+  backgroundImage: "url(https://images8.alphacoders.com/469/469681.jpg)"
 }
 
 export default class Header extends Component {
@@ -14,7 +15,7 @@ export default class Header extends Component {
     return (
       <div className="page_1" style={parallaxScrollStyle}>
         <div className="container">
-            <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc logo BLUE-01.png"/>
+            <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc LOGO WHITE.png"/>
             <div className="row align-items-center">
               <CounterView/>
             </div>

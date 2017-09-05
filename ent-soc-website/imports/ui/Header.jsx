@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 var headerStyle = {
+  width: "100%",
+  zIndex: "1",
+  top: "100%",
+  position: "absolute",
   WebkitBoxShadow: "0 8px 6px -6px #999",
   MozBoxShadow: "0 8px 6px -6px #999",
   boxShadow: "0 8px 6px -6px #999",
-  position: "fixed",
-  top: "0px",
-  width: "100%",
-  zIndex: "1"
 }
 
 export default class Header extends Component {

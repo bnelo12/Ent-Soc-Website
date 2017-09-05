@@ -11,7 +11,7 @@ var scrollButtonStyle = {
 export default class ScrollButton extends Component {
   render() {
     return (
-      <button type="button" className="btn btn-outline-dark" style={scrollButtonStyle}>
+      <button type="button" className="btn btn-outline-light" style={scrollButtonStyle}>
         <i className="fa fa-chevron-down" aria-hidden="true"></i>
       </button>
     );
