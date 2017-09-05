@@ -17,7 +17,6 @@ export default class Header extends Component {
         <div className="container">
             <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc LOGO WHITE.png"/>
             <div className="row align-items-center">
-              <CounterView/>
             </div>
         </div>
         <div className="row align-items-end">
