@@ -13,13 +13,17 @@ var logoHeadingStyle = {
     textAlign: "center"
 }
 
+var descriptionStyle = {
+    textAlign: "left"
+}
+
 export default class SubdivisionIcon extends Component {
     render() {
         return (
             <div className="subdivsion-icon" style={logoHeadingStyle}>
                 <img src={this.props.img} style={logoImageStyle}/>
                 <h3 style={logoHeadingStyle}>{this.props.name}</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p style={descriptionStyle}>{this.props.desc}</p>
             </div>
         );
     }
