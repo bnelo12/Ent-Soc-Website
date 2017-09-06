@@ -21,7 +21,7 @@ var subdivisionsViewMain = {
 export default class SubdivisionsPage extends Component {
     render() {
         return (
-            <div className="subdivisions-view" style={subdivisionsViewStyle}>
+            <div className="subdivisions-view" id="sudivisons-page" style={subdivisionsViewStyle}>
                 <div style={subdivisionsViewMain}>
                     <h1 style={subdivisionsViewLabelStyle}>SUBDIVISONS</h1>
                     <hr/>

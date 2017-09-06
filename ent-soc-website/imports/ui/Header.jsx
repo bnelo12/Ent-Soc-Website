@@ -13,7 +13,7 @@ var headerStyle = {
 export default class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark" style={headerStyle}>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="header" style={headerStyle}>
         <a className="navbar-brand" href="#">
           <img src="img/main/entsoc LOGO WHITE.png" style={{height: 50 + 'px'}}/>
         </a>
@@ -28,10 +28,10 @@ export default class Header extends Component {
                 <a className="nav-link" href="#">HOME<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item active">
-                <a className="nav-link" href="#">SUBDIVISIONS</a>
+                <a className="nav-link" href="#sudivisons-page">SUBDIVISIONS</a>
               </li>
               <li className="nav-item active">
-                <a className="nav-link disabled" href="#">TEAM</a>
+                <a className="nav-link disabled" href="#team-page">TEAM</a>
               </li>
               <li className="nav-item active">
                 <a className="nav-link disabled" href="#">NEWSLETTER</a>

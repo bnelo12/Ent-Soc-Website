@@ -15,7 +15,7 @@ var teamPageHeaderStyle = {
 export default class TeamPage extends Component {
     render() {
         return (
-            <div className="team-page" style={teamPageStyle}>
+            <div className="team-page" id="team-page" style={teamPageStyle}>
                 <h1 style={teamPageHeaderStyle}>THE TEAM</h1>
             </div>
         );
