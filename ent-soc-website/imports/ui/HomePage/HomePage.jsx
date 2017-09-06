@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CounterView from './CounterView';
 import ScrollButton from './ScrollButton';
+import JoinModal from './JoinModal'
 
 var parallaxScrollStyle = {
   height: "100%",
@@ -19,6 +20,7 @@ export default class Header extends Component {
   render() {
     return (
       <div className="page_1" style={parallaxScrollStyle}>
+        <JoinModal/>
         <div className="container">
             <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc LOGO WHITE.png"/>
             <div style={subHeadingStyle}>
