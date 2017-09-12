@@ -25,7 +25,10 @@ export default class Header extends Component {
           <div className="dropup">
             <ul className="nav navbar-nav ml-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="#">HOME<span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="#home-page">HOME<span className="sr-only">(current)</span></a>
+              </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="#about-page">ABOUT<span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#sudivisons-page">SUBDIVISIONS</a>

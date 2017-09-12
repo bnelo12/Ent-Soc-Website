@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
+import PersonProfile from './PersonProfile'
 
 var teamPageStyle = {
-    height: "600px",
     textAlign: "center",
     backgroundImage: "url(/img/fqySIM.jpg)",
     backgroundAttachment: "fixed"
@@ -16,7 +16,36 @@ export default class TeamPage extends Component {
     render() {
         return (
             <div className="team-page" id="team-page" style={teamPageStyle}>
-                <h1 style={teamPageHeaderStyle}>THE TEAM</h1>
+                <h1 style={teamPageHeaderStyle}>MEET THE TEAM</h1>
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                        <div className="col">
+                            <PersonProfile/>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }
