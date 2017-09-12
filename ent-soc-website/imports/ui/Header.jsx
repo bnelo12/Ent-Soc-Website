@@ -33,15 +33,6 @@ export default class Header extends Component {
               <li className="nav-item active">
                 <a className="nav-link" href="#sudivisons-page">SUBDIVISIONS</a>
               </li>
-              <li className="nav-item active">
-                <a className="nav-link disabled" href="#team-page">TEAM</a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link disabled" href="#">NEWSLETTER</a>
-              </li>
-              <li className="nav-item active">
-                <a className="nav-link disabled" href="#">CONTACT</a>
-              </li>
             </ul>
           </div>
         </div>

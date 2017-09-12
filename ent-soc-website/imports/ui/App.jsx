@@ -22,8 +22,6 @@ export default class App extends Component {
         <div className="pages" style={pagesStyle}>
           <AboutPage/>
           <SubdivisionsPage/>
-          <TeamPage/>
-          <NewsletterPage/>
         </div>
       </div>
     );
