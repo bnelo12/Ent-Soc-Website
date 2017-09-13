@@ -11,6 +11,7 @@ var aboutImageStyle = {
     top: "0px",
     width: "100%",
     marginTop: "20px",
+    marginBottom: "20px",
     borderRadius: "50px"
 }
 
@@ -49,7 +50,8 @@ var dividerStyle = {
     textAlign: "center",
     width: "300px",
     margin: "auto",
-    marginTop: "-70px"
+    marginTop: "-70px",
+    marginBottom: "-70px"
 }
 
 var aboutParagraph1 = `
@@ -88,7 +90,7 @@ export default class AboutPage extends Component {
                         <img src="img/about1.jpg" style={aboutImageStyle}/>
                     </div>
                     <div className="about-text-section" style={aboutTextSection}>
-                        <h1 style={aboutHeading}>NOT A SOCIETY A COMMUNITY</h1>
+                        <h1 style={aboutHeading}>Not a society a community.</h1>
                         <h5 style={paragraphStyle}>{ aboutParagraph1 }</h5>
                     </div>
                 </div>
@@ -96,6 +98,13 @@ export default class AboutPage extends Component {
                     <img src="img/red-divider.svg" width="100%"/>
                 </div>
                 <div style={aboutPageSubStyle}>
+                    <div className="about-text-section" style={aboutTextSection}>
+                        <h1 style={aboutHeading}>Not one to many, but many to many.</h1>
+                        <h5 style={paragraphStyle}>{ aboutParagraph2 }</h5>
+                    </div>
+                    <div className="about-image" style={aboutImageDivStyle}>
+                        <img src="img/about1.jpg" style={aboutImageStyle}/>
+                    </div>
                 </div>
                 <div style={dividerStyle} >
                     <img src="img/red-divider.svg" width="100%"/>
