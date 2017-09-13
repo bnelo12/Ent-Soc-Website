@@ -46,6 +46,13 @@ var paragraphStyle = {
     textAlign: "right"
 }
 
+var paragraphStyleRight = {
+    margin: "15px",
+    marginLeft: "70px",
+    color: "grey",
+    textAlign: "left"
+}
+
 var dividerStyle = {
     textAlign: "center",
     width: "300px",
@@ -103,7 +110,7 @@ export default class AboutPage extends Component {
                         <h5 style={paragraphStyle}>{ aboutParagraph2 }</h5>
                     </div>
                     <div className="about-image" style={aboutImageDivStyle}>
-                        <img src="img/about1.jpg" style={aboutImageStyle}/>
+                        <img src="img/about3.jpg" style={aboutImageStyle}/>
                     </div>
                 </div>
                 <div style={dividerStyle} >
@@ -115,7 +122,7 @@ export default class AboutPage extends Component {
                     </div>
                     <div className="about-text-section" style={aboutTextSection}>
                         <h1 style={aboutHeading}>Inspiring. Innovative. Connecting.</h1>
-                        <h5 style={paragraphStyle}>{ aboutParagraph3 }</h5>
+                        <h5 style={paragraphStyleRight}>{ aboutParagraph3 }</h5>
                     </div>
                 </div>
             </div>
