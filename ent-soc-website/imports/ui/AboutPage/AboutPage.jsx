@@ -4,7 +4,7 @@ var aboutImageDivStyle = {
     top: "0px",
     width: "40%",
     display: "inline-block",
-    marginLeft: "70px"
+    marginLeft: "70px",
 }
 
 var aboutImageStyle = {
@@ -21,6 +21,8 @@ var aboutPageStyle = {
 }
 
 var aboutPageSubStyle = {
+    textAlign: "center",
+    margin: "auto",
     top: "0px",
     display: "inline-flex",
     width: "100%",
@@ -39,6 +41,13 @@ var aboutHeading = {
     marginRight: "70px"
 }
 
+var aboutHeadingRight = {
+    textAlign: "left",
+    color: "black",
+    fontSize: "60px",
+    marginLeft: "70px"
+}
+
 var paragraphStyle = {
     margin: "15px",
     marginRight: "70px",
@@ -50,7 +59,7 @@ var paragraphStyleRight = {
     margin: "15px",
     marginLeft: "70px",
     color: "grey",
-    textAlign: "left"
+    textAlign: "left",
 }
 
 var dividerStyle = {
@@ -106,8 +115,8 @@ export default class AboutPage extends Component {
                 </div>
                 <div style={aboutPageSubStyle}>
                     <div className="about-text-section" style={aboutTextSection}>
-                        <h1 style={aboutHeading}>Not one to many, but many to many.</h1>
-                        <h5 style={paragraphStyle}>{ aboutParagraph2 }</h5>
+                        <h1 style={aboutHeadingRight}>Not one to many, but many to many.</h1>
+                        <h5 style={paragraphStyleRight}>{ aboutParagraph2 }</h5>
                     </div>
                     <div className="about-image" style={aboutImageDivStyle}>
                         <img src="img/about3.jpg" style={aboutImageStyle}/>
@@ -122,7 +131,7 @@ export default class AboutPage extends Component {
                     </div>
                     <div className="about-text-section" style={aboutTextSection}>
                         <h1 style={aboutHeading}>Inspiring. Innovative. Connecting.</h1>
-                        <h5 style={paragraphStyleRight}>{ aboutParagraph3 }</h5>
+                        <h5 style={paragraphStyle}>{ aboutParagraph3 }</h5>
                     </div>
                 </div>
             </div>
