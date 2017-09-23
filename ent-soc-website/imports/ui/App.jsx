@@ -6,6 +6,7 @@ import SubdivisionsPage from './SubdivisionsPage/SubdivisionsPage.jsx';
 import TeamPage from './TeamPage/TeamPage'
 import NewsletterPage from './NewsletterPage/NewsletterPage'
 import AboutPage from './AboutPage/AboutPage'
+import EventsPage from './EventsPage/EventsPage'
 
 var pagesStyle = {
   position: "absolute",
@@ -22,6 +23,7 @@ export default class App extends Component {
         <div className="pages" style={pagesStyle}>
           <AboutPage/>
           <SubdivisionsPage/>
+          <EventsPage/>
         </div>
       </div>
     );

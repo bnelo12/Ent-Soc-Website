@@ -5,15 +5,13 @@ var headerStyle = {
   zIndex: "1",
   top: "calc(100% - 70px)",
   position: "absolute",
-  WebkitBoxShadow: "0 8px 6px -6px #999",
-  MozBoxShadow: "0 8px 6px -6px #999",
-  boxShadow: "0 8px 6px -6px #999",
+  backgroundColor: "#173653"
 }
 
 export default class Header extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="header" style={headerStyle}>
+      <nav className="navbar navbar-expand-lg navbar-dark" id="header" style={headerStyle}>
         <a className="navbar-brand" href="#">
           <img src="img/main/entsoc LOGO WHITE.png" style={{height: 50 + 'px'}}/>
         </a>
@@ -32,6 +30,9 @@ export default class Header extends Component {
               </li>
               <li className="nav-item active">
                 <a className="nav-link" href="#sudivisons-page">SUBDIVISIONS</a>
+              </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="#sudivisons-page">EVENTS</a>
               </li>
             </ul>
           </div>
