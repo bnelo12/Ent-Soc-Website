@@ -3,7 +3,7 @@ $( document ).ready(function() {
             console.log('hello');
             $('iframe').attr("src", 'https://entsoc.typeform.com/to/lZRrKT');
         });
-    $(document).on('click', 'a', function(event){
+    $(document).on('click', '.nav-link', function(event){
         event.preventDefault();
 
         $('html, body').animate({
@@ -18,3 +18,7 @@ $( document ).ready(function() {
         }
     });
 });
+
+var appendEventDiv = function() {
+
+}

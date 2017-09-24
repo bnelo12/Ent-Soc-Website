@@ -32,7 +32,7 @@ export default class Header extends Component {
                 <a className="nav-link" href="#sudivisons-page">SUBDIVISIONS</a>
               </li>
               <li className="nav-item active">
-                <a className="nav-link" href="#sudivisons-page">EVENTS</a>
+                <a className="nav-link" href="#events-page">EVENTS</a>
               </li>
             </ul>
           </div>

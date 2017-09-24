@@ -24,6 +24,22 @@
           version    : 'v2.10'
         });
         FB.AppEvents.logPageView();
+        var timeStamp = Math.floor(Date.now() / 1000);
+        FB.api(
+          '/me/events',
+          'GET',
+          {
+            "access_token": 'EAABtSUEVbO8BAEWdeJY3T1G1XGy7AU5ByZC3FytlsnsqZBtNyRZAVwEe16Bk075vxPcMinDZAAlw1MZB903XSdS4Ikl7HAO1iS5wthwfT1BCV7dlO9aIZAouKCD8uVVciZC96u8vnoxae7uFDKy67xwiwJ61fPWrrnuDvMQNJR32AZDZD', 
+            "since": timeStamp
+          },
+          function(response) {
+              let next_event = response.data[response.data.length-1]
+              let next_event_url = "http://facebook.com/" + next_event.id;
+              $('#next-event').attr('href', next_event_url);
+              $('#next-event').html('<b>Next Event: </b>' + next_event.name);
+              console.log(response);
+          }
+        );
       };
     
       (function(d, s, id){

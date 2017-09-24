@@ -18,12 +18,25 @@ var subHeadingStyle = {
   margin: "50px"
 }
 
+var nextEventStyle = {
+  position: "absolute",
+  left: "0px",
+  top: "0px",
+  padding: "10px",
+  color: "white",
+  fontSize: "12px",
+  backgroundColor: "#f0544f"
+}
+
 export default class Header extends Component {
   render() {
     return (
       <div id="home-page" style={parallaxScrollStyle}>
         <JoinModal/>
         <div className="container">
+            <a id="next-event" style={nextEventStyle} target="_blank">
+              Next Event:
+            </a>
             <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc LOGO WHITE.png"/>
             <div style={subHeadingStyle}>
               INSPIRING INNOVATIVE CONNECTING
