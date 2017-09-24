@@ -39,11 +39,11 @@ export default class Header extends Component {
             </a>
             <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc LOGO WHITE.png"/>
             <div style={subHeadingStyle}>
-              INSPIRING INNOVATIVE CONNECTING
+              <h5>Inspiring Innovative Connecting</h5>
             </div>
-        </div>
-        <div className="row align-items-end">
-          <ScrollButton/>
+            <div className="row align-items-end">
+              <ScrollButton/>
+            </div>
         </div>
       </div>
     );
