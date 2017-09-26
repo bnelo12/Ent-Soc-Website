@@ -23,7 +23,7 @@ export default class SubdivisionsPage extends Component {
         return (
             <div className="subdivisions-view" id="sudivisons-page" style={subdivisionsViewStyle}>
                 <div style={subdivisionsViewMain}>
-                    <h1 style={subdivisionsViewLabelStyle}>SUBDIVISONS</h1>
+                    <h1 style={subdivisionsViewLabelStyle}>Subdivisions</h1>
                     <hr/>
                     <div className="container">
                         <div className="row">

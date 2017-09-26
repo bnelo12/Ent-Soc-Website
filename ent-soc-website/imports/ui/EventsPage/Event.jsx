@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 
 var styles = {
     event: {
-        width: "230px",
+        minWidth: "230px",
+        maxWidth: "230px",
         height: "300px",
         backgroundColor: "#173653",
-        margin: "20px 40px 20px 40px",
-        position: "relative"
+        margin: "auto",
+        position: "relative",
+        textAlign: "center"
     },
     eventDecoration: {
         position: "absolute",
@@ -33,23 +35,29 @@ var styles = {
         height: "75px",
         width: "100%",
         backgroundColor: "#f0544f",
-        left: "0px"
+        left: "0px",
+        textDecoration: "none",
+        color: "white",
+        textAlign: "center",
+        paddingTop: "10px"
     }
 }
 
 export default class Event extends Component {
     render() {
         return (
-            <div className="event paper" style={styles.event}>
+            <div className="event paper col-4" style={styles.event}>
                 <div className="event-decoration" style={styles.eventDecoration}/>
                 <div className="event-month" style={styles.eventMonth}>
-                    SEPTEMBER
+                    September
                 </div>
                 <div className="event-day" style={styles.eventDay}>
                     23
                 </div>
-                <div className="event-description-banner" style={styles.eventDescriptionBanner}>
-                </div>
+                <a href="#" className="event-description-banner" style={styles.eventDescriptionBanner}>
+                    <h5 className="event-description-name" style={{fontSize: "12px", padding: "0px 5px"}}>This is the event name which is really really long</h5>
+                    <p className="event-description-location" style={{fontSize: "10px", padding: "0px 5px"}}>Appelton Tower G101</p>
+                </a>
             </div>
         );
     }

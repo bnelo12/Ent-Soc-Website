@@ -34,7 +34,7 @@ export default class Header extends Component {
       <div id="home-page" style={parallaxScrollStyle}>
         <JoinModal/>
         <div className="container">
-            <a id="next-event" style={nextEventStyle} target="_blank">
+            <a id="next-event" class="paper" style={nextEventStyle} target="_blank">
               Next Event:
             </a>
             <img className="main-logo img-fluid mx-auto d-block" src="img/main/entsoc LOGO WHITE.png"/>

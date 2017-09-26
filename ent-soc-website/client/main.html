@@ -39,6 +39,9 @@
               let next_event_url = "http://facebook.com/" + next_event.id;
               $('#next-event').attr('href', next_event_url);
               $('#next-event').html('<b>Next Event: </b>' + next_event.name);
+              for (var i = 0; i < response.data.length; i++) {
+                
+              }
               console.log(response);
           }
         );
