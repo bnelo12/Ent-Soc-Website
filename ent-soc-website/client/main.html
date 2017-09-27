@@ -40,8 +40,9 @@
               $('#next-event').attr('href', next_event_url);
               $('#next-event').html('<b>Next Event: </b>' + next_event.name);
               for (var i = 0; i < response.data.length; i++) {
-                
+                appendEventDiv(i, response.data[i].name, response.data[i].place.name, response.data[i].start_time);
               }
+              $('#event-template').remove();
               console.log(response);
           }
         );

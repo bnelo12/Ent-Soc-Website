@@ -8,7 +8,9 @@ var styles = {
         backgroundColor: "#173653",
         margin: "auto",
         position: "relative",
-        textAlign: "center"
+        textAlign: "center",
+        marginTop: "20px",
+        marginBottom: "20px"
     },
     eventDecoration: {
         position: "absolute",
@@ -21,7 +23,8 @@ var styles = {
     eventMonth: {
         color: "white",
         position: "absolute",
-        top: "13px"
+        top: "17px",
+        left: "20px"
     },
     eventDay: {
         position: "absolute",
@@ -46,17 +49,15 @@ var styles = {
 export default class Event extends Component {
     render() {
         return (
-            <div className="event paper col-4" style={styles.event}>
+            <div className="paper col-4" id="event-template" style={styles.event}>
                 <div className="event-decoration" style={styles.eventDecoration}/>
                 <div className="event-month" style={styles.eventMonth}>
-                    September
                 </div>
                 <div className="event-day" style={styles.eventDay}>
-                    23
                 </div>
                 <a href="#" className="event-description-banner" style={styles.eventDescriptionBanner}>
-                    <h5 className="event-description-name" style={{fontSize: "12px", padding: "0px 5px"}}>This is the event name which is really really long</h5>
-                    <p className="event-description-location" style={{fontSize: "10px", padding: "0px 5px"}}>Appelton Tower G101</p>
+                    <h5 className="event-description-name" style={{fontSize: "12px", padding: "0px 5px"}}></h5>
+                    <p className="event-description-location" style={{fontSize: "10px", padding: "0px 5px"}}></p>
                 </a>
             </div>
         );

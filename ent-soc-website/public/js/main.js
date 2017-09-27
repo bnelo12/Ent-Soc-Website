@@ -19,6 +19,24 @@ $( document ).ready(function() {
     });
 });
 
-var appendEventDiv = function() {
+var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June", "July",
+    "August", "September", "October",
+    "November", "December"
+  ];
 
+var appendEventDiv = function(eventID, name, location, date) {
+    let eventTemplate = $('#event-template').clone();
+    eventTemplate.attr('id', eventID);
+    let eventName = eventTemplate.find('.event-description-name');
+    let eventLocation = eventTemplate.find('.event-description-location');
+    let eventMonth = eventTemplate.find('.event-month');
+    let eventDay = eventTemplate.find('.event-day');
+    let p_date = new Date(date);
+    eventName.text(name);
+    eventLocation.text(location);
+    eventMonth.text(monthNames[p_date.getMonth()]);
+    eventDay.text(p_date.getDate());
+    $('.events-list').append(eventTemplate);
 }
