@@ -8,7 +8,6 @@ var subdivisionsViewStyle = {
 
 var subdivisionsViewLabelStyle = {
     width: "100%",
-    textAlign: "center",
     paddingTop: "40px"
 }
 
@@ -23,9 +22,9 @@ export default class SubdivisionsPage extends Component {
         return (
             <div className="subdivisions-view" id="sudivisons-page" style={subdivisionsViewStyle}>
                 <div style={subdivisionsViewMain}>
-                    <h1 style={subdivisionsViewLabelStyle}>Subdivisions</h1>
-                    <hr/>
                     <div className="container">
+                        <h1 style={subdivisionsViewLabelStyle}>Subdivisions</h1>
+                        <hr/>
                         <div className="row">
                             <div className="col">
                                 <SubdivisionIcon name="EntPALS" img="/img/subdivisions/EntPALS/EP2.png" desc="EntPALS is the new scheme for first and second year Management Courses like industrial management, techniques of management, and innovation driven entrepreneurship."/>

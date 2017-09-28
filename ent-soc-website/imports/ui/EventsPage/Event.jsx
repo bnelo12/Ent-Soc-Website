@@ -24,7 +24,8 @@ var styles = {
         color: "white",
         position: "absolute",
         top: "17px",
-        left: "20px"
+        left: "20px",
+        fontSize: "25px"
     },
     eventDay: {
         position: "absolute",
