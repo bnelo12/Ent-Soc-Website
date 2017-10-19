@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $('#JoinModal').on('show.bs.modal', function (e) {
             console.log('hello');
-            $('iframe').attr("src", 'https://entsoc.typeform.com/to/lZRrKT');
+            $('iframe').attr("src", 'https://docs.google.com/forms/d/e/1FAIpQLSeN91F9c-CLWDNVEyh0lgWLDXhBEZ72K0khPt-5e8qg2qCcRw/viewform?usp=sf_link');
         });
     $(document).on('click', '.nav-link', function(event){
         event.preventDefault();
